@@ -38,7 +38,7 @@ __END__
 body { background-color:#FFFFFF; color:#000000; }
 -->
 </style>
-<link href="9vox.css" rel="stylesheet" type="text/css" >
+<link href="/public/9vox.css" rel="stylesheet" type="text/css" >
 </head>
 
 <!-- 0:page  -->
