@@ -1,14 +1,19 @@
 require "rubygems"
 require "sinatra"
+require 'erb'
 
-set :public, File.dirname(__FILE__) + '/public'
+helpers do
+  def link(name)
+    "#{name}link"
+  end
+end
 
 get '/' do
   #erbを表示する。
   erb :index
 end
 
-get '/views/profile' do
+get '/profile' do
   erb :profile
 end
 
@@ -20,8 +25,4 @@ get '/code' do
   erb :code
 end
 
-helpers do
-  def bar(name)
-    "#{name}bar"
-  end
-end
+
